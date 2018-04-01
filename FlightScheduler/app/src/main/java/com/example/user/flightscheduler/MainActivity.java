@@ -31,6 +31,7 @@ public class MainActivity extends AppCompatActivity {
             Toast.makeText(this, "No plane added!", Toast.LENGTH_SHORT).show();
         }
         else {
+            y=0;
             p = Arrays.copyOf(AddPlaneActivity.a, n);
 
             Arrays.sort(p);
@@ -68,9 +69,9 @@ public class MainActivity extends AppCompatActivity {
 
                 flag1[t] = 1;
                 y++;
-                Intent intent = new Intent(getApplicationContext(), ScheduleActivity.class);
-                startActivity(intent);
             }
+            Intent intent = new Intent(getApplicationContext(), ScheduleActivity.class);
+            startActivity(intent);
         }
     }
 
