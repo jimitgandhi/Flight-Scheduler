@@ -19,7 +19,7 @@ public class ScheduleActivity extends AppCompatActivity {
         ArrayList<String> schedule=new ArrayList<>();
 
         for(int i=0;i<MainActivity.n;i++) {
-            schedule.add(MainActivity.pnrfinal[i]+" - "+MainActivity.arrfinal[i]);
+            schedule.add(MainActivity.arrfinal[i]+" - "+MainActivity.pnrfinal[i]);
         }
 
         ArrayAdapter<String> arrayAdapter=new ArrayAdapter<String>(this,android.R.layout.simple_list_item_1,schedule);
