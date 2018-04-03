@@ -4,25 +4,28 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/back"
     tools:context="com.example.user.flightscheduler.MainActivity">
 
     <Button
         android:id="@+id/addplane"
-        android:layout_width="wrap_content"
+        android:layout_width="150dp"
         android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="157dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="116dp"
+        android:layout_marginStart="38dp"
         android:onClick="addPlane"
         android:text="Add Plane" />
 
     <Button
         android:id="@+id/check"
-        android:layout_width="wrap_content"
+        android:layout_width="150dp"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/addplane"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="59dp"
+        android:layout_alignBaseline="@+id/addplane"
+        android:layout_alignBottom="@+id/addplane"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="38dp"
         android:onClick="checkSchedule"
         android:text="Check Schedule" />
 </android.widget.RelativeLayout>

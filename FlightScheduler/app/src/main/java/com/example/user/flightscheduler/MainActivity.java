@@ -65,6 +65,8 @@ public class MainActivity extends AppCompatActivity {
                 pnrfinal[y] = AddPlaneActivity.pnr[t];
 
                 int hour_of_landing = (i / 60);
+                if(hour_of_landing>=24)
+                    hour_of_landing=hour_of_landing%24;
                 int min_of_landing = (i % 60);
                 if (min_of_landing / 10 == 0)
                     time = hour_of_landing + ":0" + min_of_landing;

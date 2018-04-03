@@ -4,18 +4,19 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/newback"
     tools:context="com.example.user.flightscheduler.AddPlaneActivity">
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_marginEnd="43dp"
-        android:layout_marginTop="32dp"
-        android:layout_toStartOf="@+id/button"
-        android:text="Enter PNR:"
-        android:textColor="@android:color/black" />
+        android:layout_above="@+id/numberPicker"
+        android:layout_marginEnd="7dp"
+        android:layout_toStartOf="@+id/pnrspinner"
+        android:text="Enter Flight No.:"
+        android:textColor="@android:color/black"
+        android:textSize="18sp" />
 
     <TextView
         android:id="@+id/textView2"
@@ -25,26 +26,29 @@
         android:layout_alignTop="@+id/numberPicker"
         android:layout_marginTop="80dp"
         android:text="Enter Arrival Time:"
-        android:textColor="@android:color/black" />
+        android:textColor="@android:color/black"
+        android:textSize="18sp" />
 
     <TextView
         android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignStart="@+id/textView2"
-        android:layout_below="@+id/numberPicker2"
-        android:layout_marginTop="25dp"
+        android:layout_below="@+id/numberPicker"
+        android:layout_marginTop="14dp"
         android:text="Enter Fuel Percentage:"
-        android:textColor="@android:color/black" />
+        android:textColor="@android:color/black"
+        android:textSize="18sp" />
 
     <CheckBox
         android:id="@+id/emergency"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignStart="@+id/textView3"
+        android:layout_alignStart="@+id/textView4"
         android:layout_below="@+id/seekBar"
-        android:layout_marginTop="16dp"
-        android:text="Emergency" />
+        android:layout_marginTop="14dp"
+        android:text="Emergency"
+        android:textSize="18sp" />
 
     <EditText
         android:id="@+id/pnr"
@@ -60,19 +64,22 @@
         android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/emergency"
+        android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="29dp"
+        android:layout_marginBottom="29dp"
+        android:background="@color/colorPrimaryDark"
         android:onClick="added"
-        android:text="ADD PLANE" />
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:text="ADD PLANE"
+        android:textColor="@android:color/background_light" />
 
     <Spinner
         android:id="@+id/pnrspinner"
         android:layout_width="100dp"
         android:layout_height="wrap_content"
-        android:layout_alignStart="@+id/button"
-        android:layout_alignTop="@+id/textView"
-        android:layout_marginTop="6dp" />
+        android:layout_above="@+id/numberPicker"
+        android:layout_alignStart="@+id/button" />
 
     <TextView
         android:id="@+id/textView4"
@@ -92,7 +99,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/textView3"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="13dp"
         android:max="10"
         android:progress="5" />
 
